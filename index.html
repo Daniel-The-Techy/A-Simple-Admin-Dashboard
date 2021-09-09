@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" a href="main.css">
+</head>
+<body id="bit">
+    
+<section class="header-class">
+        <span id="menu-icon"><ion-icon name="list-outline"></ion-icon></span>
+        <header>
+          <div class="header-image">
+              <h1>Daniel</h1>
+            <img src="./img/team1.jpg">
+              </div>
+
+        </header>
+</section>
+
+
+   <div class="navigation">
+
+    <div class="Title">
+        <h3><span class="active-title">Easy</span>Transfer</h3>
+    </div>
+
+       <ul>
+            <li>
+               <a href="">
+                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                       <span class="link">Dashboard</span>
+                   </li>
+               </a>
+    
+               
+               <li>
+               <a href="">  
+                   <span class="icon"><ion-icon name="bar-chart-outline"></ion-icon></span>
+                    <span class="link">Investment</span>
+                </li>
+            </a>
+            
+
+            <li>
+                <a href="">
+                    <span class='icon'><ion-icon name="stats-chart-outline"></ion-icon></span>
+                        <span class="link">Analytics</span>
+                      
+                    </li>
+                </a>
+    
+
+
+            <li>
+            <a href="">
+                <span class="icon"><ion-icon name="id-card-outline"></ion-icon></span>
+                    <span class="link">Service</span>
+                   
+                </li>
+            </a>
+        
+            <li>
+            <a href="">
+                <span class="icon"><ion-icon name="people-outline"></ion-icon></span>
+                    <span class="link">Profile</span>
+                    
+            </li>
+            </a>
+            
+            <li>
+                <a href="">
+                    <span class='icon'><ion-icon name="wallet-outline"></ion-icon></span>
+                        <span class="link">Transaction</span>
+                      
+                    </li>
+                </a>
+    
+
+            <li>
+               <a href="">
+                <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                    <span class="link">Setting</span>
+                    
+                </li>
+            </a>
+            
+
+          
+
+          
+            <li>
+                <a href="">
+                    <span class='icon'><ion-icon name="stats-chart-outline"></ion-icon></span>
+                        <span class="link">sales</span>
+                      
+                    </li>
+                </a>
+
+
+            <li>
+            <a href="">
+                <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                    <span class="link">LogOut</span>
+                   
+                </li>
+            </a>
+            
+           
+       
+        </ul>
+</div>
+
+     <div class="container">
+         <div class="container-box">
+            <span class="active-link"><ion-icon name="cloudy-outline"></ion-icon></span>
+             <h1>Transaction</h1>
+             <h1>2</h1>
+    
+    </div>
+
+         <div class="container-box">
+             <span class="active-link"><ion-icon name="shapes-outline"></ion-icon></span>
+             <h1>Pending</h1>
+             <h1>1</h1>
+            
+        </div>
+
+        <div class="container-box">
+            <span class="active-link"><ion-icon name="reader-outline"></ion-icon></span>
+             <h1>Status</h1>
+             <h3>Online</h3>
+        </div>
+
+     </div>
+
+    
+     
+     
+     <script src="main.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.js" integrity="sha512-b3xr4frvDIeyC3gqR1/iOi6T+m3pLlQyXNuvn5FiRrrKiMUJK3du2QqZbCywH6JxS5EOfW0DY0M6WwdXFbCBLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     
+<div class="chart-container">
+    <canvas id="chart"></canvas>
+</div>
+
+
+
+
+<div class="copyright">
+    <h3>Daniel-The-Techy Copyright &copy; 2021</h3>
+    </div>
+
+    <div class="chart-block">
+
+    </div>
+  </body>
+
+<script>
+   
+   const labels = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+];
+const data = {
+  labels: labels,
+  datasets: [{
+    label: 'Transaction Chart',
+    backgroundColor: 'rgb(255, 99, 132)',
+    borderColor: 'rgb(255, 99, 132)',
+    data: [10, 20, 60, 24, 20, 30, 45],
+  }]
+};
+
+const config = {
+  type: 'line',
+  data: data,
+  options: {}
+};
+
+
+var myChart = new Chart(
+    document.getElementById('chart'),
+    config
+  );
+
+
+
+
+</script>
+
+
+</html>
